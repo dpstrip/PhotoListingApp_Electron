@@ -1,0 +1,6 @@
+<b>Instructions</b>
+<p>This program displays all pictures in a directory on the main page. </p>
+By clicking the Select directory button the user is given a folder dialog box.  
+Navigate to the directory where all of your pictuers are and it will display them.  
+Double click on an image and a new window will open up with a bigger size image on it.
+ 

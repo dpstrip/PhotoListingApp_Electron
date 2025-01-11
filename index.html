@@ -4,22 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Viewer</title>
+    <title>Photo Listing App</title>
     <style>
+        /* Add some basic styling */
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu-bar {
+            background-color: blue;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-bar button {
+            background-color: white;
+            color: blue;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .menu-bar button:hover {
+            background-color: lightblue;
         }
 
         #thumbnail-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 10px;
+            padding: 20px;
         }
 
         .thumbnail {
-            width: 150px;
-            height: 150px;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
             cursor: pointer;
         }
@@ -27,9 +56,16 @@
 </head>
 
 <body>
-    <h1>Image Viewer</h1>
-    <button id="select-dir-btn">Select Directory</button>
-    <div id="thumbnail-container"></div>
+    <header>
+        <h1>Photo Review</h1>
+    </header>
+    <div class="menu-bar">
+        <button id="select-dir-btn">Select Directory</button>
+        <button id="help-btn">Help</button>
+    </div>
+    <div id="thumbnail-container">
+        <!-- Thumbnails will be displayed here -->
+    </div>
     <script src="renderer.js"></script>
 </body>
 
