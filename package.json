@@ -1,6 +1,6 @@
 {
   "name": "photolistingapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This app displays a listing of pictures in the directory",
   "main": "main.js",
   "scripts": {
